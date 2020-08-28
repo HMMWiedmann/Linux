@@ -1,5 +1,7 @@
 #!/bin/bash
 
+minavailableRamPercent=$1
+
 memavailable=`free -m | grep Mem | awk '{print $7}'`; 
 memtotal=`free -m | grep Mem | awk '{print $2}'`; 
 
